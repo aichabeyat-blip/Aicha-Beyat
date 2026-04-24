@@ -6,7 +6,7 @@
     <title>AfriTalent _ Contact</title>
 
     <!-- Bootstrap5 via CDN : feuill de style-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="atylsheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="atylsheet">
 
     <!-- Votre feuille de style personnelle-->
     <link rel="stylsheet" href="css/style.css">
@@ -14,9 +14,88 @@
 <body>
 
     <!-- Le contenue de la page sera ajoute ici-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="containe">
+            <a class="navbar-brand" href="index.html">AfriTalent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-items">
+                        <a class="nav-link " href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="freelances.html">Freelances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarifs.html">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+     </nav>
+     <div class="container my-5">
+        <h2 class="text-center mb-4">Contactez-nous</h2>
+        <div class="row g-4">
+            <div class="col-md-7">
+                <form>
+                    
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nom" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Prenom" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input  type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" required>
+                            <option selected disabled>Sujet</option>
+                            <option>Demand d'information</option>
+                            <option>Support</option>
+                            <option>Partenariat</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-select" rows="5" placeholder="Message (min 20 caracteres)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <div class="p-4 bg-light rounded">
+
+                    <h5>Informations</h5>
+                    <p><strong>Email</strong> contact@afritalent.com</p>
+                    <p><strong>Telephone</strong>+221 77 000 00 00</p>
+                    <p><strong>Adresse</strong>Dakar, Senegal</p>
+                </div>
+                <div class="mt-4">
+                    <iframe
+                    src="https://maps.google.com/maps?q=Dakar&t=&z+13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </iframe>
+                </div>
+            </div>
+            
+        </div>
+     </div>
 
     <!-- Bootstrap 5 via CDN : script JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!--Votre script JavaScript-->
     <script src="js/main.js"></script>
