@@ -53,7 +53,7 @@
     <main>
      <!-- Section Hero-->
      <section id="hero">
-        <div class="container py-5">
+        <div class="container">
             <h1 id="hh">Trouvez la talent africain qu'il vous faut</h1>
             <h2 id="hh"> Une plateforme simple, rapide et fiable pour trouver ou proposer des missions tech </h2>
             <p id="hh">
@@ -66,23 +66,23 @@
         </div>
         <div class="chif">
             <h2>Nos chiffres cles</h2>
-            <div>
-                <h3>+2500</h3>
+            <div class="box">
+                <h3 class="counter" data-target>+2500</h3>
                 <p>Freelances</p>
             </div>
-            <div>
-                <h3>+800</h3>
+            <div class="box">
+                <h3 class="counter" data-target>+800</h3>
                 <p>Entreprises</p>
             </div>
-            <div>
-                <h3>+12000</h3>
+            <div class="box">
+                <h3 class="counter" data-target>+12000</h3>
                 <p>Missions realisees</p>
             </div>
         </div>
      </section>
      <!--section comment marche-->
-     <section id="ca">
-        <div class="container py-5">
+    <section class="ca" id="Accueil">
+        <div class="container1 ">
             <div class="large">
                 <div class="number">01</div>
                 <div class="icon">
@@ -129,75 +129,104 @@
                 </p>
             </div>
         </div>
-     </section>
-     <section class="cat">
+    </section>
+     <section class="cat" id="Categories">
         <h2>Categories de services</h2>
-        <div class="container py-5">
+        <div class="container2">
 
-            <div class="col-md-4">
+            <div class="card2">
                 <i class="fa-solid fa-slash"></i>
                 <h3>developpement Web</h3>
                 <P>+1200 freelance disponibles</P>
             </div>
-            <div class="col-md-4">
+            <div class="card2">
                 <i class="fa-solid fa-cloud"></i>
                 <h3>DevOps & Cloud</h3>
                 <P>+720 freelance disponibles</P>
             </div>
-            <div class="col-md-4">
+            <div class="card2">
                 <i class="fa-solid fa-paintbrush"></i>
                 <h3>Design UI/UX</h3>
                 <P>+850 freelance disponibles</P>
             </div>
-            <div class="col-md-4">
+            <div class="card2">
                 <i class="fa-solid fa-bullhorn"></i>
                 <h3>Marketing Digital</h3>
                 <P>+980 freelance disponibles</P>
             </div>
-            <div class="col-md-4">
+            <div class="card2">
                 <i class="fa-solid fa-microchip"></i>
                 <h3>Data & IA</h3>
                 <P>+640 freelance disponibles</P>
             </div>
-            <div class="col-md-4">
+            <div class="card2">
                 <i class="fa-solid fa-pen-to-square"></i>
                 <h3>Redaction Tech</h3>
                 <P>+500 freelance disponibles</P>
             </div>
         </div>
-     </section>
-     <section id="sec">
-        <h2>Temoignages</h2>
-        <div class="container py-5">
-            <div class="slide">
+    </section>
+    <section id="Temoignages">
+       <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+         <h2>Temoignages</h2>
+            <div class="carousel-inner text-center">
+             <div class="carousel-item active">
                 <img src="images/developer.jpeg" alt="developer">
                 <h3>Ahmed Diallo</h3>
-                <p>Freelance Developpeur Web</p>
+                <p class="text-muted">Freelance Developpeur Web</p>
                 <p>
                     "Tres bonne plateforme, j'ai trouve des clients rapidement"
                 </p>
-                <p>&#11088;&#11088;&#11088;&#11088;&#11088; </p>
-            </div>
-            <div class="slide">
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+              </div>
+             <div class="carousel-item">
                 <img src="images/marketer1.jpeg" alt="marketer">
                 <h3>Sofia Benali</h3>
-                <p>Entreprise - Marketing Digital</p>
+                <p class="text-muted">Entreprise - Marketing Digital</p>
                 <p>
                     "Service efficace et freelances tres professionnels."
                 </p>
-                <p>&#11088;&#11088;&#11088;&#11088;&#11088; </p>
-            </div>
-            <div class="slide">
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+             </div>
+             <div  class="carousel-item">
                 <img src="images/design.jpeg" alt="UI/UX">
                 <h3>Sara Med</h3>
-                <p>Freelance UI/UX Designer</p>
+                <p  class="text-muted">Freelance UI/UX Designer</p>
                 <p>
                     "Interface simple et intuitive pour trouver des projets."
                 </p>
-                <p>&#11088;&#11088;&#11088;&#11088;&#11088; </p>
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
             </div>
         </div>
-     </section>
+         <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" dta-bs-slid="prev">
+            <span class="caousel-control-prev-icon"></span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" dta-bs-slid="next">
+            <span class="caousel-control-next-icon"></span>
+         </button>
+       </div>
+    </section>
      <section class="cta text-center text-white">
         <div class="container">
             <h2>Rejoignez notre plateforme des aujourd'hui</h2>
@@ -209,45 +238,48 @@
      </section>
     </main>
     <footer class="footer">
-        <div class="container footer-grid">
-            <div class="conf">
-                <h3>AfriTalent</h3>
-                <p>
+        <div class="container">
+            <div class="row"></div>
+             <div class="col-md-3">
+                <h3 class="logo">AfriTalent</h3>
+                <p class="des">
                     plateforme qui connect les freelances africains aux entreprises du monde entier.
                 </p>
-            </div>
-            <div class="conf">
+             </div>
+             <div class="col-md-3">
                 <h4>Liens utiles</h4>
                 <ul>
-                    <li>Accueil</li>
-                    <li>Services</li>
-                    <li>Categories</li>
-                    <li>Temoignages</li>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Categories">Categories</a></li>
+                    <li><a href="#Temoignages">Temoignages</a></li>
                 </ul>
-            </div>
-            <div class="conf">
+             </div>
+             <div class="col-md-3">
                 <h4>Ressources</h4>
                 <ul>
-                    <li>Blog</li>
-                    <li>FAQ</li>
-                    <li>Support</li>
-                    <li>Guide freelance</li>
+                    <li><a href="Blog"> Blog</a></li>
+                    <li><a href="FAQ">FAQ</a></li>
+                    <li><a href="Support">Support</a></li>
+                    <li><a href="Guide freelance">Guide freelance</a></li>
                 </ul>
-            </div>
-            <div class="conf">
-                <h4>Contact</h4>
+             </div>
+             <div class="col-md-3">
+                <h4><a href="contact.html" id="c">Contact</a></h4>
                 <p>Email:contact@afritalent.com</p>
                 <p>Telephone:+221 77 000 00 00</p>
-                <p>
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-twitter"></i>
-                </p>
+                <div class="social">
+                    <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p> &copy; AfriTalent - Tous droits reserves</p>
+        
+         <div class="copyright">
+            <p> &copy;</p> <span id="year"></span> AfriTalent- Tous droits reserves.
+         </div>
+    
         </div>
     </footer>
 
