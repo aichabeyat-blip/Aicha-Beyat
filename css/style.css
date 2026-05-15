@@ -397,3 +397,33 @@ body{
         margin: auto;
     }
 }
+.dark{
+    background-color: black;
+    color: white;
+}
+.dark .navbar{
+    background-color: #111;
+}
+.navbar{
+    padding: 25px 0;
+    transition: 0.3s;
+}
+.navbar.scrolled{
+    background-color: black;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+    padding: 5px 0 !important ;
+    transition: 0.3s;
+}
+#theme-toglle{
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 8px 12px;
+}
+#backToTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
