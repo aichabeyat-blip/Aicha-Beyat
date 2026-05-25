@@ -427,3 +427,28 @@ body{
     bottom: 20px;
     right: 20px;
 }
+/* fade in */
+.section{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+.section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* stats */
+.box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 50px 0;
+}
+.box {
+    text-align: center;
+}
+.counter{
+    font-size: 40px;
+    font-weight: bold;
+}
