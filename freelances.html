@@ -54,18 +54,19 @@
     <section class="section">
      <div class="container py-5">
         <h3 class="mb-3">Filtrer par Categories</h3>
-            <select class="form-select w-25">
-                <option selected> Toutes les categories</option>
-                <option>Design</option>
-                <option >Developpement</option>
-                <option>Marketing</option>
+            <select id="categoryFilter" class="form-select w-25">
+                <option  value="all" selected> Toutes les categories</option>
+                <option value="design">Design</option>
+                <option  value="developpement">Developpement</option>
+                <option value="marketing">Marketing</option>
+                <option value="Writing">Writing</option>
             </select>
      </div>
     </section>
     <section>
      <div class="container">
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12 freelance" data-category="developpement">
                 <div class="card h-100">
                     <img src="images/developer2.jpeg" alt="developer">
                     <div class="card-body">
@@ -78,7 +79,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="design" >
                 <div class="card h-100">
                     <img src="images/designer.jpeg" alt="designer">
                     <div class="card-body">
@@ -91,7 +92,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="marketing">
                 <div class="card h-100">
                     <img src="images/digitalmarketer2.jpeg" alt="marketer2">
                     <div class="card-body" >
@@ -104,7 +105,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="design">
                 <div class="card h-100">
                     <img src="images/photograph.jpeg" alt="photograph">
                     <div class="card-body">
@@ -117,7 +118,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="marketing">
                 <div class="card h-100">
                     <img src="images/community.jpeg" alt="manager">
                     <div class="card-body">
@@ -130,7 +131,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="developpement">
                 <div class="card h-100">
                     <img src="images/mobiledeveloper.jpeg" alt="mobile">
                     <div class="card-body">
@@ -143,7 +144,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="Writing">
                 <div class="card h-100">
                     <img src="images/WebEditor.jpeg" alt="Editor">
                     <div class="card-body">
@@ -156,7 +157,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="developpement">
                 <div class="card h-100">
                     <img src="images/developerbackend.jpeg" alt="backend">
                     <div class="card-body">
@@ -169,7 +170,7 @@
                     </div>   
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-4 col-md-6 col-12  freelance" data-category="Writing">
                 <div class="card h-100">
                     <img src="images/translator.jpeg" alt="translator">
                     <div class="card-body">

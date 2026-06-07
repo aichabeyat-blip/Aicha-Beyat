@@ -91,3 +91,83 @@ document.addEventListener("DOMContentLoaded", () => {
         sectionObserver. observe(section);
     });
 });
+//filtrage freelances
+const filter = document.getElementById("categoryFilter");
+const freelancers = document.querySelectorAll(".freelance");
+
+if (filter) {
+    filter.addEventListener("change", function (){
+        const value = this.value;
+
+        freelancers.forEach(item =>{
+            const category = item.getAttribute("data-category");
+
+            if (value === "all" || category === value) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
+}
+
+// form validation 
+const form = document.getElementById("contactForm");
+
+const nameInput = document. getElementById("name");
+const emailInput = document. getElementById("email");
+const messageInput = document. getElementById("message");
+
+const successMessage = document.getElementById("success");
+
+const errorMessages = document. querySelectorAll(".error");
+
+const nameError = errorMessages[0];
+const emailError = errorMessages[1];
+const messageError = errorMessages[2];
+
+if (form) {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let isValid = true;
+        //reset message
+        nameError.innerText = "";
+        emailError.innerText = "";
+        messageError.innerText = "";
+        successMessage.innerText = "";
+
+        // name valid
+        if (nameInput.value.trim() === "") {
+            nameError.innerText = "Le nom est requis";
+            isValid = false;
+        }
+
+        // email valid
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailInput.value.trim() === "") {
+            emailError.innerText = "l'email est requis";
+            isValid = false;
+        } else if (!emailPattern.test(emailInput.value)) {
+            emailError.innerText = "Email invalid";
+            isValid = false;
+        }
+
+    
+        // message valis
+        if (messageInput.value.trim(). length < 20) {
+            messageError.innerText = "Message doit contenir au moins 20 caracteres";
+            isValid = false;
+        }
+        // success
+        if (isValid) {
+            successMessage.innerText = "Message envoye avec success";
+            successMessage.style.color = "green";
+            
+            form.reset();
+        }
+
+    });
+}
+

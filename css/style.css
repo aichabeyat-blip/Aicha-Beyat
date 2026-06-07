@@ -452,3 +452,6 @@ body{
     font-size: 40px;
     font-weight: bold;
 }
+.freelance{
+    transition: 0.3s ease;
+}
